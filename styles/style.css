@@ -1,5 +1,8 @@
 :root{
     --orange:#E76F51;
+        --white: #fff;
+    --grey: #D2D2D2;
+    --dark:#3B3735;
 }
 
 
@@ -26,7 +29,6 @@ a{
 
 .header{
 background: linear-gradient(rgba(59,55,53,0.3),rgba(59,55,53,0.3)), url("../FIRST.PROJECT/images/img/images/header-bg.jpg");
-
 background-position: center;
 background-size: cover;
 min-height: 550px;
@@ -40,7 +42,6 @@ display: flex;
 justify-content: space-between;
 align-items: center;
 padding-right: 19px;
-
 
 }
 
@@ -58,7 +59,8 @@ padding-top: 3px;
 margin-right: 20px;
 }
 .app-logo__img{
-
+  width: 100%;
+    height: 100%;
 
 }
 .menu{
@@ -66,23 +68,53 @@ margin-right: 20px;
   
    display: none;
 
-
 }
 .menu__item{
 
 margin-right: 15px;
 }
 .menu__link{
-color: white;
-
+color: var(--grey);
+transition: color 150ms ease-in;
 }
+
+.menu__link:hover{
+color: var(--white);
+} 
+
+
+.menu__link--active{
+
+color: var(--white);
+position: relative;
+z-index: 1;
+}
+
+.menu__link--active::before{
+    content: '';
+    position: absolute;
+    width: 30px;
+    height: 3px;
+    background-color: blue;
+     right: 0;
+    left: 0;
+    top: 7px;
+    width: 4rem;
+    height: 0.3rem;
+    border-radius: 10rem;
+     transform: rotate(45deg);
+    z-index: -1;
+
+    margin: 0 auto;
+}
+
 .nav-menu{
 position: fixed;
 top: 0;
 left: -350px;
 bottom: 0;
 width: 280px;
-background-color: rgb(238, 231, 231);
+background-color: rgb(218, 217, 217);
 padding: 25px;
 transition: all 250ms ease-in-out;
 box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.9), 0 6px 20px 0 rgba(0, 0, 0, 0);
@@ -109,12 +141,11 @@ color: rgb(0, 0, 0); /*میتونستیم با متغیر هم رنگشون رو
 }
 .nav-menu__links{
 display: flex;
-
+margin-right: 25px;
 }
 .nav-menu__link{
 
 color: rgb(5, 2, 2);
-border: 1px solid rgb(17, 12, 12);
 display: block;
 padding: 10px;
 flex-grow: 1;
@@ -126,14 +157,14 @@ text-align: center;
 }
 .header__link--border{
 
-
+color: black;
 }
 .header__links{
 display: none;
 }
 
 .header__link {
-color: white ;
+color: var(--white) ;
 font-family: "roboto Medium";
 margin-left: 15px;
 
@@ -162,6 +193,7 @@ height: 3px ;
 background-color: var(--orange);
 position: relative;
 border-radius: 10px;
+transition: all 150ms ease-in-out;
 
 }
 .nav__btn-line::before,
