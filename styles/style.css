@@ -27,11 +27,39 @@ a{
     text-decoration: none;
 }
 
+/*
+
+--helper class--
+
+*/
+
+/*
+
+--component--
+
+*/
+
+.btn{
+    display: block;
+    border-radius: 100px;
+    color: var(--white);
+    background-color: var(--dark);
+    width: 180px;
+    height: 50px;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   margin-right: auto;
+   margin-left: auto;
+   font-family: "Roboto Medium";
+
+}
+
 .header{
 background: linear-gradient(rgba(59,55,53,0.3),rgba(59,55,53,0.3)), url("../FIRST.PROJECT/images/img/images/header-bg.jpg");
 background-position: center;
 background-size: cover;
-min-height: 550px;
+min-height: 85vh;
 border-bottom-left-radius: 30px;
 border-bottom-right-radius: 30px;
 }
@@ -180,6 +208,7 @@ nav links
 .nav-menu__links{
 display: flex;
 margin-right: 25px;
+gap: 10px;
 }
 .nav-menu__link{
 
@@ -194,11 +223,11 @@ padding: 10px 20px;
 border-radius: 45px;
 transition: all 100ms ease-in;
 }
-.nav-menu__link--border{
-
-
+.nav-menu__link--border:hover{
+background-color: var(--white);
+color: var(--dark);
 }
-.header__link--border{
+.nav__link--border{
 
 
 }
@@ -215,13 +244,14 @@ header links
 display: none;
 }
 
+
 .nav__link{
 color: var(--white) ;
 font-family: "roboto Medium";
 margin-left: 15px;
 
 }
-.header__link--border{
+.nav__link--border{
 color: var(--white);
 border: 1px solid var(--white);
 display: block;
@@ -234,7 +264,7 @@ border-radius: 45px;
 transition: all 100ms ease-in;
 }
 
-.header__link--border:hover{
+.nav__link--border:hover{
     background-color: var(--white);
     color: var(--dark)
 }
@@ -298,3 +328,41 @@ transition: all 170ms ease-in-out;
 .nav__btn--open .nav__btn-line::after{
    transform: translateY(-10px) rotate(-45deg);
 }
+
+/*
+
+===================
+header content
+===================
+
+*/
+
+.header-content{
+
+text-align: center;
+color: var(--white);
+
+}
+.header-content__title{
+
+font-family: "Archivo Black";
+font-size: 42px;
+line-height: 1.2;
+margin-top: 85px;
+margin-bottom: 40px;
+max-width: 35rem;
+
+}
+.header-content__caption{
+
+font-size: 18px;
+max-width: 34rem;
+margin: 0 auto 2rem auto;
+}
+.header-content__link{
+
+    background-color: var(--orange);
+
+
+}
+

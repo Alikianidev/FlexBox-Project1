@@ -1,3 +1,10 @@
+@media (max-width:380px) {
+.header-content__title{
+    font-size: 32px;
+}
+}
+
+
 
 
 @media (min-width:576px) {
@@ -15,8 +22,9 @@
 }
 
 @media (min-width:992px) {
-.header__links{
-    display: block;
+.nav__links{
+    display: flex;
+    align-items: center;
 }
 }
 
