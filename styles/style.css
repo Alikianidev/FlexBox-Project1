@@ -36,7 +36,13 @@ border-bottom-left-radius: 30px;
 border-bottom-right-radius: 30px;
 }
 
+/*
 
+===================
+  nav
+===================
+
+*/
 .nav{
 display: flex;
 justify-content: space-between;
@@ -49,6 +55,14 @@ padding-right: 19px;
     display: flex;
     align-items: center;
 }
+
+/*
+
+=======================
+main menu (desktop)
+=======================
+
+*/
 
 .app-logo{
 
@@ -107,6 +121,14 @@ z-index: 1;
     margin: 0 auto;
 }
 
+/*
+
+====================
+navigation menu
+====================
+
+*/
+
 .nav-menu{
 position: fixed;
 top: 0;
@@ -126,6 +148,14 @@ left: 0;
 
 }
 
+/*
+
+===================
+mobile menu
+===================
+
+*/
+
 .mobile-menu{
 
 margin-bottom: 30px;
@@ -138,6 +168,15 @@ margin-bottom: 10px;
 color: rgb(0, 0, 0); /*میتونستیم با متغیر هم رنگشون رو تایین کنیم */
 
 }
+
+/*
+
+===================
+nav links
+===================
+
+*/
+
 .nav-menu__links{
 display: flex;
 margin-right: 25px;
@@ -150,6 +189,10 @@ display: block;
 padding: 10px;
 flex-grow: 1;
 text-align: center;
+border: 1px solid var(--white);
+padding: 10px 20px;
+border-radius: 45px;
+transition: all 100ms ease-in;
 }
 .nav-menu__link--border{
 
@@ -159,23 +202,51 @@ text-align: center;
 
 
 }
-.header__links{
+
+/*
+
+===================
+header links
+===================
+
+*/
+
+.nav__links{
 display: none;
 }
 
-.header__link {
+.nav__link{
 color: var(--white) ;
 font-family: "roboto Medium";
 margin-left: 15px;
 
 }
 .header__link--border{
-
+color: var(--white);
+border: 1px solid var(--white);
+display: block;
+padding: 10px;
+flex-grow: 1;
+text-align: center;
 border: 1px solid var(--white);
 padding: 10px 20px;
 border-radius: 45px;
 transition: all 100ms ease-in;
 }
+
+.header__link--border:hover{
+    background-color: var(--white);
+    color: var(--dark)
+}
+
+/*
+
+===================
+nav btn
+===================
+
+*/
+
 .nav__btn{
 background-color: rgb(248, 245, 245);
 width: 50px; 
