@@ -95,14 +95,13 @@ z-index: 1;
     position: absolute;
     width: 30px;
     height: 3px;
-    background-color: blue;
-     right: 0;
-    left: 0;
-    top: 7px;
-    width: 4rem;
-    height: 0.3rem;
-    border-radius: 10rem;
-     transform: rotate(45deg);
+    background-color: var(--orange);
+     top: 50%;
+    left: 50%;
+    width: 30px;
+    height: 4px;
+    border-radius: 10px;
+     transform:translate(-50%, -50%) rotate(45deg);
     z-index: -1;
 
     margin: 0 auto;
@@ -145,7 +144,8 @@ margin-right: 25px;
 }
 .nav-menu__link{
 
-color: rgb(5, 2, 2);
+color: var(--white);
+border: 1px solid var(--white);
 display: block;
 padding: 10px;
 flex-grow: 1;
@@ -157,7 +157,7 @@ text-align: center;
 }
 .header__link--border{
 
-color: black;
+
 }
 .header__links{
 display: none;
@@ -171,9 +171,10 @@ margin-left: 15px;
 }
 .header__link--border{
 
-border: 1px solid rgb(255, 255, 255);
+border: 1px solid var(--white);
 padding: 10px 20px;
 border-radius: 45px;
+transition: all 100ms ease-in;
 }
 .nav__btn{
 background-color: rgb(248, 245, 245);
@@ -191,8 +192,8 @@ display: block;
 width: 25px;
 height: 3px ;
 background-color: var(--orange);
-position: relative;
 border-radius: 10px;
+position: relative;
 transition: all 150ms ease-in-out;
 
 }
@@ -220,7 +221,7 @@ transition: all 170ms ease-in-out;
 }
 
 .nav__btn--open .nav__btn-line::before{
-   transform: translateY(10px) rotate(45deg);
+   transform: translateY(8px) rotate(45deg);
 }
 
 .nav__btn--open .nav__btn-line::after{

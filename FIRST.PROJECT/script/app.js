@@ -16,3 +16,15 @@ if (navOpen){
 }
 })
 
+const links = document.querySelectorAll('.menu__link');
+ 
+links.forEach(link => {
+link.addEventListener('click', () => {
+ 
+links.forEach(item =>
+item.classList.remove('menu__link--active')
+);
+ 
+link.classList.add('menu__link--active');
+});
+});
