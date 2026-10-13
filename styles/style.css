@@ -3,6 +3,10 @@
         --white: #fff;
     --grey: #D2D2D2;
     --dark:#3B3735;
+    --app-bg:#FAF4F2;
+    --primary-font:"Roboto", Arial, Helvetica, sans-serif;
+        --primary-font-md:"Roboto Medium", Arial, Helvetica, sans-serif;
+            --secondary-font:"Archivo Black", Arial, Helvetica, sans-serif;
 }
 
 
@@ -19,7 +23,8 @@ font-size: 62.5px;
 body{
     line-height: 1.6;
     font-size: 16px;
-    font-family: "Roboto";
+    font-family: var(--primary-font);
+    background-color: var(--app-bg);
 }
 
 
@@ -51,7 +56,7 @@ a{
    align-items: center;
    margin-right: auto;
    margin-left: auto;
-   font-family: "Roboto Medium";
+   font-family: var(--primary-font-md);
 
 }
 
@@ -223,6 +228,17 @@ transition: all 250ms ease-in-out;
 width: 16px;
 }
 
+.nav-menu__title{
+color: var(--white);
+font-size: 20px;
+font-family: var(--secondary-font);
+border-bottom: 1px solid var(--white);
+padding-bottom: 10px;
+margin-bottom: 10px;
+text-align: center;
+
+}
+
 /*
 
 ===================
@@ -255,7 +271,7 @@ margin: 20px 0;
     border: none;
     outline: none;
     margin: 0;
-    font-family: "Roboto Medium";
+    font-family: var(--primary-font-md);
     font-size: 16px;
     background-color: var(--white);
     margin: 0;
@@ -265,7 +281,7 @@ margin: 20px 0;
 .search-container button{
 padding:12px 20px;
 font-size: 16px;
-    font-family: "Roboto Medium";
+    font-family: var(--primary-font-md);
 border: none;
 border-left: 1px solid var(--white);
 background-color: #cf8876;
@@ -325,7 +341,7 @@ display: none;
 
 .nav__link{
 color: var(--white) ;
-font-family: "roboto Medium";
+font-family: var(--primary-font-md);
 margin-left: 15px;
 
 }
@@ -423,7 +439,7 @@ color: var(--white);
 }
 .header-content__title{
 
-font-family: "Archivo Black";
+font-family: var(--secondary-font);
 font-size: 42px;
 line-height: 1.2;
 margin-top: 85px;
@@ -441,5 +457,52 @@ margin: 0 auto 2rem auto;
 
     background-color: var(--orange);
 
+
+}
+
+
+/*
+
+===================
+  main
+===================
+
+*/
+
+.main{
+
+}
+
+/*
+
+===================
+  services
+===================
+
+*/
+
+.services{
+
+}
+.service{
+background-color: rgb(66, 66, 253);
+height: 320px;
+width: 360px;
+margin-bottom: 20px;
+text-align: center;
+border-radius: 20px;
+display: flex;
+flex-direction: column;
+align-items: center;
+justify-content: center;
+
+}
+.service__img{
+
+}
+.service__title{
+
+}
+.service__caption{
 
 }
