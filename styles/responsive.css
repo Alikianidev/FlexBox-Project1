@@ -18,7 +18,10 @@
 .menu{
  display: flex;
 }
-
+.place{
+    flex: 0 0 calc(50% - 10px);
+    max-width: none;
+}
 }
 
 @media (min-width:992px) {
@@ -29,7 +32,10 @@
 }
 
 @media (min-width:1200px) {
-
+.place{
+    flex: 0 0 calc(25% - 15px);
+    max-width: none;
+}
 }
 
 @media (min-width:1400px) {
