@@ -581,9 +581,17 @@ height:35px;
 border-radius: 10px;
 cursor: pointer;
 }
+
+.place__like-icon--fill{
+fill: var(--orange);
+stroke: var(--white);
+}
+
 .place__like-icon{
 
 }
+
+
 .place__price{
 background-color: var(--white);
 border-radius: 10px;
