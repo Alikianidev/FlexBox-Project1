@@ -1,5 +1,6 @@
 :root{
-    --orange:#E76F51;
+    --main-color:#E76F51;
+    --secondary-color:#F8E1DB;
         --white: #fff;
     --grey: #D2D2D2;
     --dark:#3B3735;
@@ -45,7 +46,6 @@ a{
 */
 
 .btn{
-    display: block;
     border-radius: 100px;
     color: var(--white);
     background-color: var(--dark);
@@ -142,7 +142,7 @@ z-index: 1;
     position: absolute;
     width: 30px;
     height: 3px;
-    background-color: var(--orange);
+    background-color: var(--main-color);
      top: 50%;
     left: 50%;
     width: 30px;
@@ -168,7 +168,7 @@ top: 0;
 left: -350px;
 bottom: 0;
 width: 280px;
-background-color: var(--orange);
+background-color: var(--main-color);
 padding: 25px;
 transition: all 250ms ease-in-out;
 box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.9), 0 6px 20px 0 rgba(0, 0, 0, 0);
@@ -386,7 +386,7 @@ cursor: pointer;
 display: block;
 width: 25px;
 height: 3px ;
-background-color: var(--orange);
+background-color: var(--main-color);
 border-radius: 10px;
 position: relative;
 transition: all 150ms ease-in-out;
@@ -398,7 +398,7 @@ content: ' ';
 position: absolute;
 width: 25px;
 height: 3px ;
-background-color: var(--orange);
+background-color: var(--main-color);
 border-radius: 10px;
 transition: all 170ms ease-in-out;
 
@@ -455,7 +455,7 @@ margin: 0 auto 2rem auto;
 }
 .header-content__link{
 
-    background-color: var(--orange);
+    background-color: var(--main-color);
 
 
 }
@@ -583,7 +583,7 @@ cursor: pointer;
 }
 
 .place__like-icon--fill{
-fill: var(--orange);
+fill: var(--main-color);
 stroke: var(--white);
 }
 
@@ -605,7 +605,7 @@ width: 120px;
 }
 .place__price-text{
 font-family: var(--primary-font-md);
-color: var(--orange);
+color: var(--main-color);
 text-align: center;
 }
 .place__title{
@@ -625,15 +625,15 @@ margin-top: auto;
 }
 
 .place__link:hover{
-    color: var(--orange);
+    color: var(--main-color);
     background-color: var(--white);
-    border: 2px solid var(--orange);
+    border: 2px solid var(--main-color);
     transition: all 100ms ease-in;
 }
 
 .Destinations__btn{
-    color: var(--orange);
-    border: 2px solid var(--orange);
+    color: var(--main-color);
+    border: 2px solid var(--main-color);
     background-color: transparent;
     transition: all 100ms ease-in;
     margin-top: 30px;
@@ -641,5 +641,77 @@ margin-top: auto;
 
 .Destinations__btn:hover{
     color: var(--white);
-background-color: var(--orange);
+background-color: var(--main-color);
 }
+
+/*
+
+===================
+  newsletter
+===================
+
+*/
+
+.newsletter{
+background-color: var(--secondary-color);
+border-radius: 20px;
+    width: calc(100%-40px);
+margin: 40px auto;
+box-sizing: border-box;
+display: flex;
+flex-direction: column;
+align-items: center;
+gap: 30px;
+}
+
+.newsletter__content{
+width: 100%;
+text-align: center;
+}
+
+.newsletter__title{
+font-family: var(--secondary-font);
+font-size: 30px;
+margin-left: 40px;
+max-width: 160px;
+margin: 20px auto;
+}
+
+.newsletter__caption{
+font-family: var(--primary-font-md);
+}
+
+.newsletter__email-box{
+display: flex;
+justify-content: center;
+margin-top: 20px;
+width: 100%;
+gap: 10px;
+}
+
+.newsletter__email-icon{
+
+}
+
+.newsletter__input{
+flex-grow: 1;
+max-width: 300px;
+padding: 10px;
+border-radius: 8px;
+box-sizing: border-box;
+}
+
+.newsletter__submit{
+
+}
+
+.newsletter__banner{
+
+}
+
+.newsletter__img{
+width: 300px;
+max-width: 100%;
+height: auto;
+}
+
